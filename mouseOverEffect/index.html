@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Clip-paht Mouseover Effects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner"></section>
+    <div class="content">
+      <h2>Clip-path Mouseover Effects</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, atque
+        voluptatibus dolores natus perferendis, eos cum enim magnam magni
+        voluptatem delectus officia odio inventore, quod soluta voluptatum fugit
+        voluptas illo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Perferendis eveniet quidem provident nobis mollitia voluptatum nam quasi
+        ducimus libero, voluptatem optio debitis temporibus aliquid perspiciatis
+        sint quaerat voluptate tempora? Quam!
+      </p>
+      <script type="text/javascript">
+        var pos = document.documentElement;
+        pos.addEventListener("mouseover", e => {
+          pos.style.setProperty("--x", e.clientX + "px");
+          pos.style.setProperty("--y", e.clientY + "px");
+        });
+      </script>
+    </div>
+  </body>
+</html>
